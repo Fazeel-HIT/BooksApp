@@ -1,0 +1,216 @@
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products - Buywithme by Shaikh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #232526, #414345);
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    nav {
+      background: #2c3e50;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 1em 1.5em;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      background: #34495e;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3em 2em;
+      background-color: #ffffffcc;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 2em;
+    }
+    .product {
+      display: flex;
+      flex-direction: row;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1.5em;
+      align-items: center;
+      flex-wrap: wrap;
+      cursor: pointer;
+    }
+    .product img {
+      width: 180px;
+      margin-right: 2em;
+      border-radius: 10px;
+      filter: brightness(1.3);
+      background: #f1f1f1;
+      padding: 0.7em;
+    }
+    .product-details {
+      flex: 1;
+    }
+    .product-details h3 {
+      margin-top: 0;
+    }
+    .product-details a {
+      display: inline-block;
+      background: #1e88e5;
+      color: white;
+      padding: 0.6em 1.4em;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 0.7em;
+    }
+    .mrp {
+      text-decoration: line-through;
+      color: #888;
+    }
+    .discount {
+      color: red;
+      font-weight: bold;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Top Amazon Picks</h1>
+    <p>Carefully Selected Products with Full Details</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+
+  <div class="container">
+    <div class="products-grid">
+
+      <div class="product" onclick="location.href='product1.html'">
+        <img src="https://m.media-amazon.com/images/I/71K9CbNZPsL._SX679_.jpg" alt="Fire-Boltt Ninja Call Pro">
+        <div class="product-details">
+          <h3>Fire-Boltt Ninja Call Pro Smartwatch</h3>
+          <p><strong>Price:</strong> ₹1,499</p>
+          <p><strong>M.R.P.:</strong> <span class="mrp">₹2,299</span></p>
+          <p><strong>Discount:</strong> <span class="discount">-35% OFF</span></p>
+          <a href="https://www.amazon.in/dp/B0BZ1TQN6D?tag=shaikh01fc-21" target="_blank">View Details</a>
+        </div>
+      </div>
+
+      <div class="product" onclick="location.href='product2.html'">
+        <img src="https://m.media-amazon.com/images/I/612177lPpJL._SX522_.jpg" alt="boAt Rockerz 255 Pro+">
+        <div class="product-details">
+          <h3>boAt Airdopes 141 Elite ANC</h3>
+          <p><strong>Price:</strong> ₹1,299</p>
+          <p><strong>M.R.P.:</strong> <span class="mrp">₹5,990</span></p>
+          <p><strong>Discount:</strong> <span class="discount">-78% OFF</span></p>
+          <a href="https://www.amazon.in/dp/B099FKT6TK?tag=shaikh01fc-21" target="_blank">View Details</a>
+        </div>
+      </div>
+
+      <div class="product" onclick="location.href='product3.html'">
+        <img src="https://m.media-amazon.com/images/I/617NtexaW2L._SX679_.jpg" alt="Echo Dot 4th Gen">
+        <div class="product-details">
+          <h3>Echo Dot (4th Gen) Smart Speaker</h3>
+          <p><strong>Price:</strong> ₹2,499</p>
+          <p><strong>M.R.P.:</strong> <span class="mrp">₹3,999</span></p>
+          <p><strong>Discount:</strong> <span class="discount">-30% OFF</span></p>
+          <a href="https://www.amazon.in/dp/B084J4MZK6?tag=shaikh01fc-21" target="_blank">View Details</a>
+        </div>
+      </div>
+
+      <div class="product" onclick="location.href='product4.html'">
+        <img src="https://m.media-amazon.com/images/I/71oPYUsIyRL._SX679_.jpg" alt="Ghar Soaps Sandalwood & Saffron Magic Soap">
+        <div class="product-details">
+          <h3>Ghar Soaps Sandalwood & Saffron Magic Soap</h3>
+          <p><strong>Price:</strong> ₹199</p>
+          <p><strong>M.R.P.:</strong> <span class="mrp">₹499</span></p>
+          <p><strong>Discount:</strong> <span class="discount">-60% OFF</span></p>
+          <a href="https://www.amazon.in/dp/B0CCZSHFZV?tag=shaikh01fc-21" target="_blank">View Details</a>
+        </div>
+      </div>
+
+      <div class="product" onclick="location.href='product5.html'">
+        <img src="https://m.media-amazon.com/images/I/51UhwaQXCpL._SX679_.jpg" alt="OnePlus Bullets Z2 Acoustic Red">
+        <div class="product-details">
+          <h3>OnePlus Bullets Z2 Acoustic Red</h3>
+          <p><strong>Price:</strong> ₹1,499</p>
+          <p><strong>M.R.P.:</strong> <span class="mrp">₹2,299</span></p>
+          <p><strong>Discount:</strong> <span class="discount">-35% OFF</span></p>
+          <a href="https://www.amazon.in/dp/B0C6F1VTPJ?tag=shaikh01fc-21" target="_blank">View Details</a>
+        </div>
+      </div>
+
+      <div class="product" onclick="location.href='product6.html'">
+        <img src="https://m.media-amazon.com/images/I/412JNtNQllL._SX300_SY300_QL70_FMwebp_.jpg" alt="Garden Art 3 Layers Lucky Bamboo Plant">
+        <div class="product-details">
+          <h3>Garden Art 3 Layers Lucky Bamboo Indoor Feng Shui Plant with Pot</h3>
+          <p><strong>Price:</strong> ₹249</p>
+          <p><strong>M.R.P.:</strong> <span class="mrp">₹499</span></p>
+          <p><strong>Discount:</strong> <span class="discount">-50% OFF</span></p>
+          <a href="https://amzn.to/4lzeZ11" target="_blank">View Details</a>
+        </div>
+      </div>
+
+      <div class="product" onclick="location.href='product7.html'">
+  <img src="https://m.media-amazon.com/images/I/51hZtBRUFBL._SX522_.jpg" alt="Portronics Toad One Mouse">
+  <div class="product-details">
+    <h3>Portronics Toad One Bluetooth Mouse</h3>
+    <p><strong>Price:</strong> ₹649</p>
+    <p><strong>M.R.P.:</strong> <span class="mrp">₹1,499</span></p>
+    <p><strong>Discount:</strong> <span class="discount">‑57% OFF</span></p>
+    <a href="https://amzn.to/4lNkTM2" target="_blank">View Details</a>
+  </div>
+</div>
+
+      <div class="product" onclick="location.href='product8.html'">
+  <img src="https://m.media-amazon.com/images/I/51QOVhHtheL._SX522_.jpg" alt="Portronics Toad 36 Wireless Mouse">
+  <div class="product-details">
+    <h3>Portronics Toad 36 Wireless Mouse</h3>
+    <p><strong>Price:</strong> ₹449</p>
+    <p><strong>M.R.P.:</strong> <span class="mrp">₹999</span></p>
+    <p><strong>Discount:</strong> <span class="discount">-55% OFF</span></p>
+    <a href="https://amzn.to/44KMx6Q" target="_blank">View Details</a>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Smart Deals by Shaikh | Powered by Amazon Affiliate</p>
+  </footer>
+</body>
+</html>
